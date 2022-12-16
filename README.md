@@ -10,7 +10,7 @@
 🚀 Upload directly to 2 arduino boards
 
 ### Folder cotonwate contains source code python to make an interface and manage database
-🚀 First, create database, we'll improve our database in the future. In this project, we use MySQL database to store and manage clothing data. How to install MYSQL: https://www.mysql.com/ and you can also use PopSQL to create queries.
+🚀 First, create database, we'll improve our database in the future. In this project, we use MySQL database to store and manage clothing data. Install MYSQL: https://www.mysql.com/ and you can also use PopSQL to create queries.
 
 🚀 Then, run control.py to connect RFID via bluetooth
 
