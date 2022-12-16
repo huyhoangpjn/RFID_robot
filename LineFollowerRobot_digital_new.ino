@@ -1,7 +1,7 @@
 #include <AFMotor.h>
-#include <SoftwareSerial.h>
 #include <Servo.h>
 #include <NewPing.h>
+
 //This code is used for digital sensors (Which use emittor to emit infrared waves
 //and if there is a surface in front of the sensor, the waves will reflect to the collector
 //Vout = LOW
@@ -31,7 +31,7 @@ const int led_stop = 7;
 const int threshold_obj = 15;
 
 //Speed
-const int speed_forward = 93;
+const int speed_forward = 113;
 //if normal power: 113
 const int speed_turn = 153;
 //if normal power: 163
@@ -70,16 +70,17 @@ void setup()
   digitalWrite(led_stop, LOW);
   servo.attach(10);
   servo.write(init_angle);
+  
   // Activate bluetooth communication
-  while(true){
-    if (Serial.available() > 0){
-      if (Serial.read() == '1'){
-        Serial.println("Bluetooth connected!");
-        delay(1000);
-        break;
-      }
-    }
-  }
+//  while(true){
+//    if (Serial.available() > 0){
+//      if (Serial.read() == '1'){
+//        Serial.println("Bluetooth connected!");
+//        delay(1000);
+//        break;
+//      }
+//    }
+//  }
 }
 
 void loop() 
@@ -130,13 +131,13 @@ void loop()
 //    duration = micros() - start;
 //    Serial.println(duration);
   }
-
+}
 //For testing:
 //  Serial.print("Left sensor:");
 //  Serial.println(analogRead(left_sensor));
 //  Serial.print("Right sensor:");
 //  Serial.println(analogRead(right_sensor));
-}
+
 
 void DetectObj(){
   int distance;
