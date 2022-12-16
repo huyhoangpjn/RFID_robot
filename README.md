@@ -9,7 +9,7 @@
 ### 2 files arduino for Line Follower Robot and RFID reader
 🚀 Upload directly to 2 arduino boards
 
-### Folder cotonwate contains source code python to make an interface and manage database
+### Folder cotonwate contains source code python to make an interface and manage the database
 🚀 First, create database, we'll improve our database in the future. In this project, we use MySQL database to store and manage clothing data. Install MYSQL: https://www.mysql.com/ and you can also use PopSQL to create queries.
 
 🚀 Then, run control.py to connect RFID via bluetooth
